@@ -22,6 +22,8 @@ Vue.filter('date', dateFilter)
 firebase.initializeApp({
   apiKey: 'AIzaSyB_Q6psJ8-0xfc-pJAisJwnPPpnGznyiBg',
   authDomain: 'vue-crm-48e82.firebaseapp.com',
+  databaseURL:
+    'https://vue-crm-48e82-default-rtdb.europe-west1.firebasedatabase.app',
   projectId: 'vue-crm-48e82',
   storageBucket: 'vue-crm-48e82.appspot.com',
   messagingSenderId: '292110583675',

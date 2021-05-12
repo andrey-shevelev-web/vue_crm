@@ -37,9 +37,10 @@ export default {
       return user ? user.uid : null
     },
 
-    async logout() {
+    async logout({ commit }) {
       try {
         await firebase.auth().signOut()
+        commit('clearInfo')
       } catch (e) {
         console.log(e)
         throw e
